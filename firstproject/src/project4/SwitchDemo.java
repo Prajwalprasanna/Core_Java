@@ -1,0 +1,42 @@
+package project4;
+import java.util.Scanner;
+
+public class SwitchDemo {
+
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Please choose the number between 1 to 7 to select a music instrument");
+		int instrument = sc.nextInt();
+		String musicInstrument;
+		// switch statement with int data type
+		switch (instrument) {
+		case 1:
+		musicInstrument = "Guitar";
+		break;
+case 2:
+		musicInstrument = "Piano";
+		break;
+		case 3:
+		musicInstrument = "Drums";
+		break;
+		case 4:
+		musicInstrument = "Flute";
+		break;
+		case 5:
+		musicInstrument = "Ukelele";
+		break;
+		case 6:
+		musicInstrument = "Violin";
+		break;
+		case 7:
+		musicInstrument = "Trumpet";
+		break;
+		default:
+		musicInstrument = "Invalid";
+		break;
+		}
+		System.out.println("you have selected "+musicInstrument);
+		}
+
+	}
